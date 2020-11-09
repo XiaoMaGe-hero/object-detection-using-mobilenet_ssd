@@ -132,8 +132,8 @@ def main(rotate_angle=[10, 10]):
                         print("undesired number of bounding boxes! at most 4 and at least 1!!")
                         exit(0)
                     seq_rotate = iaa.Sequential([
-                        iaa.Flipud(0.5),  # vertically flip 20% of all images
-                        iaa.Multiply((1.2, 1.5)),  # change brightness, doesn't affect BBs
+                        # iaa.Flipud(0.5),  # vertically flip 20% of all images
+                        # iaa.Multiply((1.2, 1.5)),  # change brightness, doesn't affect BBs
                         iaa.Affine(
                             # translate_px={"x": 10, "y": 10},
                             # scale=(0.8, 0.95),
